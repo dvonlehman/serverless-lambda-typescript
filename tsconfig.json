@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "allowJs": true,
+    "target": "es2015",
+    "esModuleInterop": true,
+    "noImplicitAny": true,
+    "jsx": "react",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": ".",
+    "lib": ["dom", "es2017"],
+    "strict": true,
+    "types": []
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules/**/*", "src/lib/__mocks__/**"]
+}

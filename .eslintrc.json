@@ -1,0 +1,37 @@
+{
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "prettier",
+    "prettier/@typescript-eslint"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "rules": {
+    "react/display-name": 0,
+    "@typescript-eslint/interface-name-prefix": ["error", "always"],
+    "@typescript-eslint/explicit-member-accessibility": 0,
+    "@typescript-eslint/no-explicit-any": 0,
+    "@typescript-eslint/no-use-before-define": ["error", {
+      "functions": false
+    }],
+    "@typescript-eslint/camelcase": 0
+  },
+  "overrides": [{
+      "files": "**/*.tsx",
+      "rules": {
+        "react/prop-types": 0,
+        "@typescript-eslint/explicit-function-return-type": 0,
+        "@typescript-eslint/no-empty-interface": 0,
+        "@typescript-eslint/no-unused-vars": ["error", {
+          "argsIgnorePattern": "theme"
+        }]
+      }
+    },
+    {
+      "files": "**/*.js",
+      "rules": {
+        "@typescript-eslint/no-var-requires": 0
+      }
+    }
+  ]
+}
